@@ -1,9 +1,13 @@
-import { LandingPage } from "./components/pages";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { LandingPage, CoursesPage } from "./Pages";
 
 export default function App(props) {
   return (
-    <div>
-      <LandingPage />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/courses" element={<CoursesPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
