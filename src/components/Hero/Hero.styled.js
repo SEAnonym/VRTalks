@@ -13,7 +13,7 @@ export const Hero = styled.main`
     color: ${({ theme }) => theme.colors.text};
 
     &-word {
-      font-size: 8rem;
+      font-size: 14rem;
       font-weight: 700;
     }
   }
